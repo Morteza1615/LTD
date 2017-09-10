@@ -35,26 +35,26 @@ function run(msg)
 		save_data("users.json", users)
 		return send_key(msg.from.id, start_txt, keyboard)
 	elseif msg.text == "ارتباط با ما" or msg.text == "درباره ما" or msg.text:lower() == "about" then
-		about_txt = "*LTD Robot* v"..bot_version.."\n`رباتی منحصر به فرد و رایگان برای مدیران کانال ها و افرادی که میخواهند خاص و متفاوت باشند.\nامکانات ربات:`\n   - ساخت کلید شیشه ای برای کانال\n   - قرار دادن لینک روی متن، هایپر لینک\n   - نوشتن متن با فونتهای مختلف\n   - تبدیل ویس و فایل صوتی به یکدیگر\n   - و...\n\n`محصولی از تیم قدرتمند آمبرلا.`\nبرنامه نویس: [مهندس شایان احمدی](https://telegram.me/shayan_soft)\nطراح و گرافیست: [محمد ملا قاسمی](https://telegram.me/graphi2)"
-		about_key = {{{text = "کانال تیم آمبرلا" , url = "https://telegram.me/UmbrellaTeam"}},{{text = "مهندس شایان احمدی" , url = "https://telegram.me/shayan_soft"}}}
+		about_txt = "*LTD Robot* v"..bot_version.."\n`رباتی منحصر به فرد و رایگان برای مدیران کانال ها و افرادی که میخواهند خاص و متفاوت باشند.\nامکانات ربات:`\n   - ساخت کلید شیشه ای برای کانال\n   - قرار دادن لینک روی متن، هایپر لینک\n   - نوشتن متن با فونتهای مختلف\n   - تبدیل ویس و فایل صوتی به یکدیگر\n   - و...\n\n`محصولی از تیم قدرتمند برازرس.`\nبرنامه نویس: [m](https://telegram.me/Videoo_brazzersbot)\nطراح و گرافیست: [محمد ملا قاسمی](https://telegram.me/Videoo_brazzersbot)"
+		about_key = {{{text = "کانال تیم برازرس" , url = "https://telegram.me/video_o_o"}},{{text = "m" , url = "https://telegram.me/Videoo_brazzersbot"}}}
 		return send_inline(msg.from.id, about_txt, about_key)
 	elseif msg.text == "راهنما" or msg.text == "/help" or msg.text:lower() == "help" or msg.text == "راهنمای ربات" then
 		help_admin = "_Admin Commands:_\n\n".."   *Block a user:*\n     `/block {telegram id}`\n\n".."   *Unblock a user:*\n     `/unblock {telegram id}`\n\n".."   *Block list:*\n     /blocklist\n\n".."   *Send message to all users:*\n     `/sendtoall {message}`\n\n".."   *All users list:*\n     /users"
-		help_user = "ربات LTD نسخه ی "..bot_version..'\n\n- ایجاد متن با فونتهای مختلف و هایپر لینک:\n`از طریق این قابلیت میتوانید متون انگلیسی خود را به 4 حالت کلفت نویس، کج نویس، کد نویس و هایپر لینک و همچنین متون فارسی را با 2 حالت هایپر لینک و کد نویس بنویسید. به این قابلیت مارک داون نیز گفته میشود. هایپر لینک ها متونی هستند که با کلیک بر روی آنها لینکی باز خواهد شد.`\n\n- ارسال کیبرد شیشه ای به کانال:\n`از طریق این قابلیت میتوانید کیبرد شیشه ای مورد نظر خود را بسازید و با استفاده از قابلیت اینلاین، در محل مورد نظر ارسال کنید. روش کار بسیار ساده است و با توجه به توضیحی که هر کلید ارائه میکند عمل کنید. پس از ساخت کلید شیشه ای، ربات به شما پیامی حاوی یک کد ارائه میدهد که آن را باید در محل تایپ وارد کنید و منتظر بمانید تا کلیدی در بالای محل تایپ ظاهر شود، با انتخاب آن کلید کیبرد شما با کلید های شیشه ای در محل مورد نظر ارسال میگردد.`\n\n- تبدیل فایل صوتی به ویس و بلعکس:\n`با استفاده از این قابلیت میتوانید ویس را به فایل صوتی و فایل صوتی را به ویس تبدیل کنید.`\n\n- تبلیغ و تبادل:\n`در این قسمت شما میتوانید با ما در خصوص تبادل تبلیغ ارتباط برقرار کنید. تبادل و تبلیغ در این ربات انجام خواهد شد. دقت کنید که آمار کانال و ربات به طور لحظه ای و دقیق در این بخش نمایش داده خواهد شد.`\n\nطراحی و تولید در [تیم آمبرلا](https://instagram.com/umbrellateam)'
+		help_user = "ربات LTD نسخه ی "..bot_version..'\n\n- ایجاد متن با فونتهای مختلف و هایپر لینک:\n`از طریق این قابلیت میتوانید متون انگلیسی خود را به 4 حالت کلفت نویس، کج نویس، کد نویس و هایپر لینک و همچنین متون فارسی را با 2 حالت هایپر لینک و کد نویس بنویسید. به این قابلیت مارک داون نیز گفته میشود. هایپر لینک ها متونی هستند که با کلیک بر روی آنها لینکی باز خواهد شد.`\n\n- ارسال کیبرد شیشه ای به کانال:\n`از طریق این قابلیت میتوانید کیبرد شیشه ای مورد نظر خود را بسازید و با استفاده از قابلیت اینلاین، در محل مورد نظر ارسال کنید. روش کار بسیار ساده است و با توجه به توضیحی که هر کلید ارائه میکند عمل کنید. پس از ساخت کلید شیشه ای، ربات به شما پیامی حاوی یک کد ارائه میدهد که آن را باید در محل تایپ وارد کنید و منتظر بمانید تا کلیدی در بالای محل تایپ ظاهر شود، با انتخاب آن کلید کیبرد شما با کلید های شیشه ای در محل مورد نظر ارسال میگردد.`\n\n- تبدیل فایل صوتی به ویس و بلعکس:\n`با استفاده از این قابلیت میتوانید ویس را به فایل صوتی و فایل صوتی را به ویس تبدیل کنید.`\n\n- تبلیغ و تبادل:\n`در این قسمت شما میتوانید با ما در خصوص تبادل تبلیغ ارتباط برقرار کنید. تبادل و تبلیغ در این ربات انجام خواهد شد. دقت کنید که آمار کانال و ربات به طور لحظه ای و دقیق در این بخش نمایش داده خواهد شد.`\n\nطراحی و تولید در [تیم برازرس](https://instagram.com/video_o_o)'
 		if msg.chat.id == admingp then
 			return send_msg(admingp, help_admin, true)
 		else
 			return send_msg(msg.from.id, help_user, true)
 		end
 	elseif msg.text == "تبلیغ و تبادل" then
-		rdjvn = mem_num("@umbrellateam")
+		rdjvn = mem_num("@video_o_o")
 		i=0
 		for k,v in pairs(users) do
 			i=i+1
 		end
 		bstat = i+1395
 		text = "نمایش آمار زنده:\n     زمان: "..os.date("%F - %H:%M:%S").."\n     کانال: "..rdjvn.result.."\n     ربات: "..bstat.."\n\n`برای تبادل و درج تبلیغات خود با ما در ارتباط باشید:`"
-		return send_inline(msg.from.id, text, {{{text = "ارتباط با مدیر تبلیغات" , url = "https://telegram.me/shayan_soft"}},{{text = "اگر ریپورت هستید برای ارتباط اینجا کلیک کنید" , url = "https://telegram.me/shayansoftBot"}},{{text = "برای سفارش هر گونه ربات کلیک کنید" , url = "https://telegram.me/shayan_soft"}}})
+		return send_inline(msg.from.id, text, {{{text = "ارتباط با مدیر تبلیغات" , url = "https://telegram.me/Videoo_brazzersbot"}},{{text = "اگر ریپورت هستید برای ارتباط اینجا کلیک کنید" , url = "https://telegram.me/Videoo_brazzersbot"}},{{text = "برای سفارش هر گونه ربات کلیک کنید" , url = "https://telegram.me/Videoo_brazzersbot"}}})
 	elseif msg.text:find('/sendtoall') and msg.chat.id == admingp then
 		local usertarget = msg.text:input()
 		if usertarget then
@@ -133,7 +133,7 @@ function run(msg)
 	elseif msg.text == "ایجاد متن با فونتهای مختلف و هایپر لینک" then
 		users[userid].action = 1
 		save_data("users.json", users)
-		return send_key(msg.from.id, "از این طریق میتوانید متون خود را با فونتهای مختلف (قابلیت مارک داون) و قرار دادن لینک روی متن (هایپر لینک) ایجاد کنید.\n\n`برای کلفت نویسی، متن مورد نظر را بین 2 عدد * قرار دهید. دقت کنید این قابلیت مربوط به حروف انگلیسی است. مثال:\n*`Umbrella`* =` *Umbrella*\n\n`برای کج نویسی، متن مورد نظر را بین 2 عدد _ قرار دهید. دقت کنید این قابلیت مربوط به حروف انگلیسی است. مثال:\n_`Umbrella`_ = `_Umbrella_\n\n*برای ماشین نویسی یا نوشتن با حالت کدینگ، متن مورد نظر را بین 2 عدد ` قرار دهید. از این حالت میتوانید در حروف فارسی و انگلیسی بهره ببرید. مثال:\n`*Umbrella*`=*  `Umbrella`\n\n`برای قراردادن لینک روی متن و هایپر لینک، متن مورد نظر را بین [] قرار دهید و لینک مورد نظر را نیز بین () بگذارید. مثال:\n[Umbrella](telegram.me/umbrellateam)` = [Umbrella](telegram.me/umbrellateam)\n\nمتن خود را طبق فرمول گفته شده ارسال کنید:", {{"لغو"}}, true)
+		return send_key(msg.from.id, "از این طریق میتوانید متون خود را با فونتهای مختلف (قابلیت مارک داون) و قرار دادن لینک روی متن (هایپر لینک) ایجاد کنید.\n\n`برای کلفت نویسی، متن مورد نظر را بین 2 عدد * قرار دهید. دقت کنید این قابلیت مربوط به حروف انگلیسی است. مثال:\n*`Umbrella`* =` *Umbrella*\n\n`برای کج نویسی، متن مورد نظر را بین 2 عدد _ قرار دهید. دقت کنید این قابلیت مربوط به حروف انگلیسی است. مثال:\n_`Umbrella`_ = `_Umbrella_\n\n*برای ماشین نویسی یا نوشتن با حالت کدینگ، متن مورد نظر را بین 2 عدد ` قرار دهید. از این حالت میتوانید در حروف فارسی و انگلیسی بهره ببرید. مثال:\n`*Umbrella*`=*  `Umbrella`\n\n`برای قراردادن لینک روی متن و هایپر لینک، متن مورد نظر را بین [] قرار دهید و لینک مورد نظر را نیز بین () بگذارید. مثال:\n[Umbrella](telegram.me/video_o_o)` = [Umbrella](telegram.me/video_o_o)\n\nمتن خود را طبق فرمول گفته شده ارسال کنید:", {{"لغو"}}, true)
 	elseif msg.text == "ارسال کیبرد شیشه ای به کانال" then
 		users[userid].action = 2
 		save_data("users.json", users)
@@ -147,7 +147,7 @@ function run(msg)
 		save_data("users.json", users)
 		return send_key(msg.from.id, "`يک عکس، ويدئو، گيف یا فايل فوروارد یا ارسال نماييد. حداکثر حجم مجاز 50 مگابايت ميباشد.`", {{"لغو"}}, true)
 	elseif msg.text == "مثال کیبرد اینلاین" then
-		return send_inline(msg.from.id, "`تیتر کیبرد اینلاین با قابلیت استفاده از قابلیت مارک داون و هایپر لینک.`", {{{text = "وبسایت تیم آمبرلا" , url = "http://Umbrella.shayan-soft.ir"}},{{text = "کانال تیم آمبرلا" , url = "https://telegram.me/UmbrellaTeam"}}})
+		return send_inline(msg.from.id, "`تیتر کیبرد اینلاین با قابلیت استفاده از قابلیت مارک داون و هایپر لینک.`", {{{text = "وبسایت تیم برازرس" , url = "https://t.me/joinchat/AAAAAER7b3vP5Pu6M8LdUw"}},{{text = "کانال تیم برازرس" , url = "https://telegram.me/video_o_o"}}})
 	end
 	
 	if users[userid].action == 0 then
@@ -198,7 +198,7 @@ function run(msg)
 		users[userid].action = 22
 		users[userid].tabtxt = msg.text
 		save_data("users.json", users)
-		return send_msg(msg.from.id, "`لینکی که میخواهید این کلید نماینده ی آن باشد را وارد کنید\nمثال: https://telegram.me/umbrellateam`", true)
+		return send_msg(msg.from.id, "`لینکی که میخواهید این کلید نماینده ی آن باشد را وارد کنید\nمثال: https://telegram.me/video_o_o`", true)
 	elseif users[userid].action == 22 then
 		if users[userid].tables == "" then
 			tabtab = ""
@@ -214,7 +214,7 @@ function run(msg)
 			save_data("channels.json", channels)
 			users[userid].action = 0
 			save_data("users.json", users)
-			send_msg(msg.from.id, "`@LTDbot "..hashid.."`", true)
+			send_msg(msg.from.id, "`@channel_manageerbot "..hashid.."`", true)
 			return send_key(msg.from.id, "`کیبرد شیشه ای ساخته شد، متن زیر را در محل تایپ وارد نمایید و منتظر بمانید تا کلید ارسال ظاهر شود، با کلیک روی کلید کیبرد شما به محل مورد نظر ارسال میگردد. دقت کنید این کد را به دفعات مختلف میتوانید استفاده کنید و اطلاعات آن در دیتا بیس میماند.`", keyboard)
 		else
 			users[userid].tab = users[userid].tab-1
@@ -280,16 +280,16 @@ end
 
 function inline(msg)
 	tab1 = '{"type":"article","parse_mode":"Markdown","disable_web_page_preview":true,"id":'
-	thumb = "http://umbrella.shayan-soft.ir/inline_icons/"
+	thumb = "https://t.me/joinchat/AAAAAER7b3vP5Pu6M8LdUw/inline_icons/"
 	if msg.query == "" or msg.query == nil then
-		tab_inline = tab1..'"1","title":"کد را وارد کنید","description":"کد کیبردی که قبلا ساخته اید را وارد کنید یا همینک آن را بسازید","message_text":"جهت ساخت کیبرد به پی وی ربات مراجعه کنید\n@LTDbot","thumb_url":"'..thumb..'ltd.png"}'
+		tab_inline = tab1..'"1","title":"کد را وارد کنید","description":"کد کیبردی که قبلا ساخته اید را وارد کنید یا همینک آن را بسازید","message_text":"جهت ساخت کیبرد به پی وی ربات مراجعه کنید\n@channel_manageerbot","thumb_url":"'..thumb..'ltd.png"}'
 	else
 		channels = load_data("channels.json")
 		if channels[tostring(msg.query)] then
 			tabless = channels[tostring(msg.query)].tables:gsub("\\","")
 			tab_inline = tab1..'"2","title":"ارسال کیبرد","description":"جهت ارسال کیبرد اینجا کلیک کنید","message_text":"'..channels[tostring(msg.query)].title..'","thumb_url":"'..thumb..'keyk_ok.png","reply_markup":{"inline_keyboard":['..tabless..']}}'
 		else
-			tab_inline = tab1..'"3","title":"کد صحیح نیست","description":"کد کیبرد وارد شده صحیح نیست، برای ساخت کلیک کنید","message_text":"جهت ساخت کیبرد به پی وی ربات مراجعه کنید\n@LTDbot","thumb_url":"'..thumb..'ltder.png"}'
+			tab_inline = tab1..'"3","title":"کد صحیح نیست","description":"کد کیبرد وارد شده صحیح نیست، برای ساخت کلیک کنید","message_text":"جهت ساخت کیبرد به پی وی ربات مراجعه کنید\n@channel_manageerbot","thumb_url":"'..thumb..'ltder.png"}'
 		end
 	end
 	return send_req(send_api.."/answerInlineQuery?inline_query_id="..msg.id.."&is_personal=true&cache_time=1&results="..url.escape('['..tab_inline..']'))
